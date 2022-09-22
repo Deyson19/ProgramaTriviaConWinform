@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Proyectos\\.NetProjects\\Escritorio\\QuizVideoYoutube\\QuizVideoYoutube\\QuizVideoYoutube.csproj": {}
+  },
+  "projects": {
+    "D:\\Proyectos\\.NetProjects\\Escritorio\\QuizVideoYoutube\\QuizVideoYoutube\\QuizVideoYoutube.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Proyectos\\.NetProjects\\Escritorio\\QuizVideoYoutube\\QuizVideoYoutube\\QuizVideoYoutube.csproj",
+        "projectName": "QuizVideoYoutube",
+        "projectPath": "D:\\Proyectos\\.NetProjects\\Escritorio\\QuizVideoYoutube\\QuizVideoYoutube\\QuizVideoYoutube.csproj",
+        "packagesPath": "C:\\Users\\Deyson Vente\\.nuget\\packages\\",
+        "outputPath": "D:\\Proyectos\\.NetProjects\\Escritorio\\QuizVideoYoutube\\QuizVideoYoutube\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Deyson Vente\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Bunifu.UI.WinForms": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
