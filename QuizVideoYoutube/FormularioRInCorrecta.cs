@@ -9,19 +9,20 @@ using System.Windows.Forms;
 
 namespace QuizVideoYoutube
 {
-    public partial class FormularioRCorrecta : Form
+    public partial class FormularioRInCorrecta : Form
     {
-        public FormularioRCorrecta()
+        public FormularioRInCorrecta()
         {
             InitializeComponent();
             reproducirSonido();
         }
 
-        private void botonCerrar_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-        string rutaAudio = "E:/sonidos/correcto.wav";
+
+        string rutaAudio = "E:/sonidos/incorrecto.wav";
         private void reproducirSonido()
         {
             SoundPlayer player = new SoundPlayer();
