@@ -19,7 +19,9 @@ namespace QuizVideoYoutube
 
         private void botonIniciarQuiz_Click(object sender, EventArgs e)
         {
-            
+            FormularioPreguntas fr = new FormularioPreguntas();
+            fr.Show();
+            this.Hide();
             
         }
 
