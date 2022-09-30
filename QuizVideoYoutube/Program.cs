@@ -17,7 +17,7 @@ namespace QuizVideoYoutube
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormularioPreguntas());
+            Application.Run(new Form1());
         }
     }
 }

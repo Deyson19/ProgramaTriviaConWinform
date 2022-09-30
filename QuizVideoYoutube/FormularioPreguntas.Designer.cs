@@ -47,11 +47,18 @@
             this.labelPregunta1 = new System.Windows.Forms.Label();
             this.labelParaPuntaje = new System.Windows.Forms.Label();
             this.labelCantidadPuntos = new System.Windows.Forms.Label();
+            this.panelResultados = new System.Windows.Forms.Panel();
+            this.labelPanelFinal = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelPuntosFinales = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelTop.SuspendLayout();
             this.panelPregunta1.SuspendLayout();
             this.panelPregunta2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelResultados.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTop
@@ -105,6 +112,7 @@
             // 
             // panelPregunta2
             // 
+            this.panelPregunta2.Controls.Add(this.panelResultados);
             this.panelPregunta2.Controls.Add(this.btn1935);
             this.panelPregunta2.Controls.Add(this.btn1945);
             this.panelPregunta2.Controls.Add(this.btn1986);
@@ -125,6 +133,7 @@
             this.btn1935.TabIndex = 4;
             this.btn1935.Text = "1935";
             this.btn1935.UseVisualStyleBackColor = true;
+            this.btn1935.Click += new System.EventHandler(this.btn1935_Click);
             // 
             // btn1945
             // 
@@ -136,6 +145,7 @@
             this.btn1945.TabIndex = 3;
             this.btn1945.Text = "1945";
             this.btn1945.UseVisualStyleBackColor = true;
+            this.btn1945.Click += new System.EventHandler(this.btn1945_Click);
             // 
             // btn1986
             // 
@@ -147,6 +157,7 @@
             this.btn1986.TabIndex = 2;
             this.btn1986.Text = "1986";
             this.btn1986.UseVisualStyleBackColor = true;
+            this.btn1986.Click += new System.EventHandler(this.btn1986_Click);
             // 
             // pictureBox2
             // 
@@ -176,6 +187,7 @@
             this.btn196huesos.TabIndex = 3;
             this.btn196huesos.Text = "196 huesos";
             this.btn196huesos.UseVisualStyleBackColor = true;
+            this.btn196huesos.Click += new System.EventHandler(this.btn196huesos_Click);
             // 
             // btn206huesos
             // 
@@ -185,6 +197,7 @@
             this.btn206huesos.TabIndex = 2;
             this.btn206huesos.Text = "206 huesos";
             this.btn206huesos.UseVisualStyleBackColor = true;
+            this.btn206huesos.Click += new System.EventHandler(this.btn206huesos_Click);
             // 
             // pictureBox1
             // 
@@ -226,6 +239,58 @@
             this.labelCantidadPuntos.TabIndex = 3;
             this.labelCantidadPuntos.Text = "0";
             // 
+            // panelResultados
+            // 
+            this.panelResultados.BackColor = System.Drawing.Color.Khaki;
+            this.panelResultados.Controls.Add(this.pictureBox3);
+            this.panelResultados.Controls.Add(this.labelPuntosFinales);
+            this.panelResultados.Controls.Add(this.label1);
+            this.panelResultados.Controls.Add(this.labelPanelFinal);
+            this.panelResultados.Location = new System.Drawing.Point(0, 0);
+            this.panelResultados.Name = "panelResultados";
+            this.panelResultados.Size = new System.Drawing.Size(680, 416);
+            this.panelResultados.TabIndex = 5;
+            // 
+            // labelPanelFinal
+            // 
+            this.labelPanelFinal.AutoSize = true;
+            this.labelPanelFinal.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPanelFinal.Location = new System.Drawing.Point(131, 22);
+            this.labelPanelFinal.Name = "labelPanelFinal";
+            this.labelPanelFinal.Size = new System.Drawing.Size(388, 21);
+            this.labelPanelFinal.TabIndex = 0;
+            this.labelPanelFinal.Text = "Felicidades por la puntuación obtenida";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Rockwell Extra Bold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(218, 367);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(224, 22);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Puntos obtenidos: ";
+            // 
+            // labelPuntosFinales
+            // 
+            this.labelPuntosFinales.AutoSize = true;
+            this.labelPuntosFinales.Font = new System.Drawing.Font("Rockwell Condensed", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelPuntosFinales.Location = new System.Drawing.Point(441, 367);
+            this.labelPuntosFinales.Name = "labelPuntosFinales";
+            this.labelPuntosFinales.Size = new System.Drawing.Size(18, 22);
+            this.labelPuntosFinales.TabIndex = 2;
+            this.labelPuntosFinales.Text = "0";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(131, 68);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(400, 282);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
             // FormularioPreguntas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -248,6 +313,9 @@
             this.panelPregunta2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelResultados.ResumeLayout(false);
+            this.panelResultados.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,5 +340,10 @@
         private System.Windows.Forms.Button btn1986;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label labelPregunta2;
+        private System.Windows.Forms.Panel panelResultados;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label labelPuntosFinales;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelPanelFinal;
     }
 }
